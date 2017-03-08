@@ -3,6 +3,11 @@ import Form from './Form';
 
 class App extends Component {
 
+    propsType = {
+        name: React.PropTypes.string.isRequired,
+        email: React.PropTypes.string.isRequired
+    }
+
     state = {
         name: '',
         email: ''
@@ -30,7 +35,7 @@ class App extends Component {
     handleEmailChange(e) {
         let newValue = e.target.value
         localStorage.setItem('email', newValue)
-        
+
         this.setState({
             email: newValue
         })
