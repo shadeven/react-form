@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Form from './Form';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
 
